@@ -137,6 +137,7 @@ h2 code {
 
 .publications .publication {
     margin-top: 1.5%;
+    padding-left: 2%;
 }
 
 .publication .section-1 .publication-date {
@@ -152,6 +153,11 @@ h2 code {
     font-family: 'Ubuntu Mono', serif;
     margin-top: -.1%;
     margin-bottom: .5%;
+}
+
+.publication .section-2 .my-name {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
