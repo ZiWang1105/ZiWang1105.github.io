@@ -15,6 +15,6 @@ python3 scripts/build.py
 python3 scripts/verify.py
 ```
 
-Selected includes only verified first- and co-first-authored papers. All includes the full curated publication list. The source notes document the Google Scholar access limitation and publication verification.
+Selected includes (co-)lead-authored papers and the explicitly selected SONIC collaboration. All includes the full curated publication list. The source notes document the Google Scholar access limitation and publication verification.
 
 See `README.md` for source structure and accessibility details. See `DEPLOYMENT.md` before publishing. Publish from `main` and `/ (root)` in GitHub Pages settings.

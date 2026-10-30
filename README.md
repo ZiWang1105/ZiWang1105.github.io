@@ -33,9 +33,9 @@ The generated `index.html` contains every publication as ordinary HTML. JavaScri
 
 ## Selection rule
 
-Selected contains only papers where Zi Wang is first author or is explicitly named as an equal-contribution first author. The generator verifies every selection against the recorded author and equal-contribution lists.
+Selected contains six (co-)lead-authored papers and SONIC, an explicitly selected collaboration. The generator checks author and equal-contribution records along with the explicit collaboration flag. SONIC displays NVIDIA GEAR Team in its collapsed author summary; its full author list remains available.
 
-Current Selected list: GRAIL, DoorMan, VIRAL, SafeHydra, ChatSim, and TBP-Former. All lists 17 verified works, including clearly labelled technical reports.
+Current Selected list: GRAIL, SONIC, DoorMan, VIRAL, SafeHydra, ChatSim, and TBP-Former. All lists 17 verified works, including clearly labelled technical reports.
 
 ## Motion and accessibility
 
@@ -51,4 +51,4 @@ The approved redesign is prepared for the `main` branch of `ZiWang1105/ZiWang110
 
 ## Verification limits
 
-Static checks validate local asset paths, HTML IDs, publication records, and first/co-first selection. The JavaScript is syntax checked and the filters and motion controls are checked against a simulated DOM. A connected browser was unavailable for visual desktop/mobile QA; responsive styling is implemented but has not been verified in a real browser during this session.
+Static checks validate local asset paths, HTML IDs, publication records, and the selected paper set. The JavaScript is syntax checked and the filters and motion controls are checked against a simulated DOM. A connected browser was unavailable for visual desktop/mobile QA; responsive styling is implemented but has not been verified in a real browser during this session.

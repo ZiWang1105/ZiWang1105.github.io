@@ -48,7 +48,7 @@ def main():
         elif url.fragment:
             assert url.fragment in page.ids, f'Broken anchor: {ref}'
     data = json.loads((ROOT / 'data/publications.json').read_text())
-    expected = {'grail', 'doorman', 'viral', 'safehydra', 'chatsim', 'tbp-former'}
+    expected = {'grail', 'sonic', 'doorman', 'viral', 'safehydra', 'chatsim', 'tbp-former'}
     actual = {p['id'] for p in data['papers'] if p['selected']}
     assert actual == expected, actual
     assert len(page.papers) == len(data['papers']) == 17
@@ -61,7 +61,7 @@ def main():
     assert 'Prof. Shankar Sastry' in source and 'BAIR' in source
     assert 'Previously, I was a Research Engineer' in source
     assert '{{' not in source
-    print(f'PASS: {len(page.papers)} papers; 6 verified Selected; {len(page.videos)} video teasers; local links, IDs, and assets valid.')
+    print(f'PASS: {len(page.papers)} papers; {len(actual)} Selected; {len(page.videos)} video teasers; local links, IDs, and assets valid.')
 
 
 if __name__ == '__main__':

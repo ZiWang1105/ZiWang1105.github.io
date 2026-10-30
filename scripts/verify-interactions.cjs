@@ -43,8 +43,23 @@ function setup({ reduced = false, saveData = false, query = '' } = {}) {
   };
 }
 const page = setup();
-assert.equal(page.visible().length, 6);
+assert.equal(page.visible().length, 7);
 assert.ok(page.visible().every(p => p.dataset.selected === 'true'));
+const sonic = page.visible().find(p => p.id === 'paper-sonic');
+assert.ok(sonic, 'SONIC should appear in the default Selected view');
+assert.equal(sonic.querySelector('.paper-content > .authors').textContent, 'NVIDIA GEAR Team');
+const sonicAuthors = sonic.querySelector('.author-details .authors').textContent.split(', ');
+assert.equal(sonicAuthors.length, 28);
+assert.equal(sonicAuthors[0], 'Zhengyi Luo*');
+assert.ok(sonicAuthors.includes('Zi Wang'));
+page.search('NVIDIA GEAR Team');
+assert.deepEqual(page.visible().map(p => p.id), ['paper-sonic']);
+page.click('[data-filter="all"]');
+assert.deepEqual(page.visible().map(p => p.id), ['paper-sonic']);
+page.click('[data-filter="selected"]');
+assert.deepEqual(page.visible().map(p => p.id), ['paper-sonic']);
+page.search('');
+assert.equal(page.visible().length, 7);
 page.click('[data-filter="all"]');
 assert.equal(page.visible().length, 17);
 page.search('Large Discrete Policy');
@@ -54,12 +69,12 @@ page.click('[data-filter="selected"]');
 assert.equal(page.visible().length, 0);
 assert.equal(page.document.querySelector('#empty-results').hidden, false);
 page.search('');
-assert.equal(page.visible().length, 6);
+assert.equal(page.visible().length, 7);
 page.search('CVPR 2024');
 assert.equal(page.visible().length, 1);
 assert.equal(page.visible()[0].id, 'paper-chatsim');
 page.search('Zi Wang');
-assert.equal(page.visible().length, 6);
+assert.equal(page.visible().length, 7);
 page.click('#motion-toggle');
 assert.ok([...page.document.querySelectorAll('video')].every(v => !v.playing));
 page.click('#motion-toggle');
@@ -72,4 +87,4 @@ for (const options of [{ reduced: true }, { saveData: true }]) {
   assert.equal(accessiblePage.document.querySelector('#motion-toggle').textContent, 'Play teasers');
 }
 assert.equal(setup({ query: '?papers=all' }).visible().length, 17);
-console.log('PASS: Selected/All, search by title/author/venue, empty results, deep link, pause/play, reduced motion, and data-saving behavior.');
+console.log('PASS: Selected/All, SONIC team credit and full authors, search by title/author/team/venue, empty results, deep link, pause/play, reduced motion, and data-saving behavior.');

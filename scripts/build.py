@@ -17,8 +17,10 @@ def author_markup(author):
     return f'<strong>{escape(author)}</strong>' if author.rstrip('*') == 'Zi Wang' else escape(author)
 
 
-def render_authors(authors):
+def render_authors(authors, summary=None):
     full = ', '.join(map(author_markup, authors))
+    if summary:
+        return f'<p class="authors">{escape(summary)}</p><details class="author-details"><summary>All {len(authors)} authors</summary><p class="authors">{full}</p></details>'
     if len(authors) <= 14:
         return f'<p class="authors">{full}</p>'
     preview = authors[:4]
@@ -59,13 +61,13 @@ def render_paper(paper):
             links.append(f'<a href="{escape(paper["links"][kind])}" aria-label="{label}: {title}">{label} <span aria-hidden="true">↗</span></a>')
     if paper.get('media_kind') == 'figure' or not (ROOT / f'assets/teasers/{paper["id"]}.mp4').exists():
         links.append(f'<a href="assets/teasers/{paper["id"]}-poster.jpg" aria-label="Full-size method figure: {title}">Figure <span aria-hidden="true">↗</span></a>')
-    query = escape(' '.join([paper['title'], ' '.join(paper['authors']), venue, paper['id']]).lower())
+    query = escape(' '.join(filter(None, [paper['title'], ' '.join(paper['authors']), paper.get('author_summary', ''), venue, paper['id']])).lower())
     return f'''        <article class="paper" id="paper-{paper['id']}" data-selected="{str(paper['selected']).lower()}" data-search="{query}" aria-labelledby="title-{paper['id']}">
           {render_media(paper)}
           <div class="paper-content">
             <p class="paper-meta"><span class="venue">{escape(venue)}</span>{badge}</p>
             <h3 id="title-{paper['id']}"><a href="{destination}">{title}</a></h3>
-            {render_authors(paper['authors'])}
+            {render_authors(paper['authors'], paper.get('author_summary'))}
             <p class="paper-summary">{escape(paper['summary'])}</p>
             <div class="paper-links">{' '.join(links)}</div>
           </div>
@@ -76,8 +78,9 @@ def main():
     assert len({paper['id'] for paper in PAPERS}) == len(PAPERS), 'Paper IDs must be unique.'
     for paper in PAPERS:
         assert any(name.rstrip('*') == 'Zi Wang' for name in paper['authors']), paper['id']
-        expected = paper['authors'][0].rstrip('*') == 'Zi Wang' or 'Zi Wang' in paper.get('equal_first_authors', [])
-        assert paper['selected'] == expected, f'First/co-first selection mismatch: {paper["id"]}'
+        is_lead = paper['authors'][0].rstrip('*') == 'Zi Wang' or 'Zi Wang' in paper.get('equal_first_authors', [])
+        expected = is_lead or paper.get('selected_collaboration', False)
+        assert paper['selected'] == expected, f'Selection mismatch: {paper["id"]}'
     page = (ROOT / 'templates/index.html').read_text()
     replacements = {
         '{{PAPERS}}': '\n'.join(map(render_paper, PAPERS)),
