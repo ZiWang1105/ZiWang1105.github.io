@@ -171,20 +171,20 @@
       "selected": true,
       "new_to_existing_site": false,
       "authors": [
-        "Zhengyi Luo*",
-        "Ye Yuan*",
-        "Tingwu Wang*",
-        "Chenran Li*",
-        "Fernando Castañeda",
-        "Sirui Chen",
-        "Zi-Ang Cao",
-        "Jiefeng Li",
-        "David Minor",
-        "Qingwei Ben",
-        "Jinhyung Park",
-        "David Sami",
-        "Zi Wang",
-        "Xingye Da",
+        "Zhengyi Luo†",
+        "Ye Yuan†",
+        "Tingwu Wang†",
+        "Chenran Li†",
+        "Fernando Castañeda†",
+        "Sirui Chen*",
+        "Zi-Ang Cao*",
+        "Jiefeng Li*",
+        "David Minor*",
+        "Qingwei Ben*",
+        "Jinhyung Park*",
+        "David Sami*",
+        "Zi Wang*",
+        "Xingye Da*",
         "Runyu Ding",
         "Cyrus Hogg",
         "Lina Song",
@@ -197,28 +197,44 @@
         "Jan Kautz",
         "Yan Chang",
         "Umar Iqbal",
-        "Linxi \"Jim\" Fan",
-        "Yuke Zhu"
+        "Linxi \"Jim\" Fan‡",
+        "Yuke Zhu‡"
       ],
       "equal_first_authors": [
         "Zhengyi Luo",
         "Ye Yuan",
         "Tingwu Wang",
-        "Chenran Li"
+        "Chenran Li",
+        "Fernando Castañeda"
       ],
       "sources": [
         "https://arxiv.org/abs/2511.07820",
-        "https://tairanhe.com/data/TairanHe_CV_20251127.pdf"
+        "https://tairanhe.com/data/TairanHe_CV_20251127.pdf",
+        "https://nvlabs.github.io/GEAR-SONIC/",
+        "https://arxiv.org/html/2511.07820v4"
       ],
       "links": {
-        "project": "https://nvlabs.github.io/SONIC/",
+        "project": "https://nvlabs.github.io/GEAR-SONIC/",
         "paper": "https://arxiv.org/abs/2511.07820",
         "doi": "https://doi.org/10.1126/scirobotics.aed4592"
       },
       "summary": "Scaling motion data, model capacity, and compute produces a generalist humanoid whole-body controller.",
-      "notes": "arXiv v4 gives journal reference Science Robotics 11 (117), eaed4592 (2026) and a revised 28-author list. The existing site has an older 26-author list. Equal first marks are from the coauthor CV; Zi Wang is not co-first.",
+      "notes": "The current GEAR-SONIC project page and arXiv v4 agree on 28 authors: the first five are co-first authors (†), the next nine including Zi Wang are core contributors (*), and the last two provide equal advising (‡). Zi Wang is a core contributor, not co-first. SONIC is explicitly selected as a collaboration.",
       "selected_collaboration": true,
-      "author_summary": "NVIDIA GEAR Team"
+      "author_summary": "NVIDIA GEAR Team",
+      "core_contributors": [
+        "Sirui Chen",
+        "Zi-Ang Cao",
+        "Jiefeng Li",
+        "David Minor",
+        "Qingwei Ben",
+        "Jinhyung Park",
+        "David Sami",
+        "Zi Wang",
+        "Xingye Da"
+      ],
+      "contribution_role": "Core contributor",
+      "author_legend": "† (Co-)lead authors · * Core contributors · ‡ Equal advising."
     },
     {
       "id": "doorman",

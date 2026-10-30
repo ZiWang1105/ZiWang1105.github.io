@@ -33,7 +33,7 @@ The generated `index.html` contains every publication as ordinary HTML. JavaScri
 
 ## Selection rule
 
-Selected contains six (co-)lead-authored papers and SONIC, an explicitly selected collaboration. The generator checks author and equal-contribution records along with the explicit collaboration flag. SONIC displays NVIDIA GEAR Team in its collapsed author summary; its full author list remains available.
+Selected contains six (co-)lead-authored papers and SONIC, an explicitly selected collaboration. The generator checks author and equal-contribution records along with the explicit collaboration flag. SONIC displays NVIDIA GEAR Team and identifies Zi Wang as a core contributor in its collapsed author summary. Its full 28-author list preserves the official contribution symbols and their paper-specific legend.
 
 Current Selected list: GRAIL, SONIC, DoorMan, VIRAL, SafeHydra, ChatSim, and TBP-Former. All lists 17 verified works, including clearly labelled technical reports.
 

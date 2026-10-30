@@ -40,8 +40,8 @@
     });
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));
     description.textContent = filter === 'selected' ?
-      '(Co-)lead-authored papers and selected collaborations. * Equal contribution.' :
-      'All publications, newest first. * Equal contribution.';
+      '(Co-)lead-authored papers and selected collaborations. * Equal contribution unless noted.' :
+      'All publications, newest first. * Equal contribution unless noted.';
     status.textContent = `${count} ${count === 1 ? 'publication' : 'publications'}${query ? ' matching your search' : ''}`;
     empty.hidden = count !== 0;
     videos.forEach(updateVideo);

@@ -14,17 +14,19 @@ def escape(value):
 
 
 def author_markup(author):
-    return f'<strong>{escape(author)}</strong>' if author.rstrip('*') == 'Zi Wang' else escape(author)
+    return f'<strong>{escape(author)}</strong>' if author.rstrip('*†‡') == 'Zi Wang' else escape(author)
 
 
-def render_authors(authors, summary=None):
+def render_authors(authors, summary=None, contribution_role=None, legend=None):
     full = ', '.join(map(author_markup, authors))
+    legend_markup = f'<p class="author-legend">{escape(legend)}</p>' if legend else ''
     if summary:
-        return f'<p class="authors">{escape(summary)}</p><details class="author-details"><summary>All {len(authors)} authors</summary><p class="authors">{full}</p></details>'
+        role_markup = f' · <strong>Zi Wang</strong> ({escape(contribution_role)})' if contribution_role else ''
+        return f'<p class="authors">{escape(summary)}{role_markup}</p><details class="author-details"><summary>All {len(authors)} authors</summary><p class="authors">{full}</p>{legend_markup}</details>'
     if len(authors) <= 14:
         return f'<p class="authors">{full}</p>'
     preview = authors[:4]
-    zi = next(name for name in authors if name.rstrip('*') == 'Zi Wang')
+    zi = next(name for name in authors if name.rstrip('*†‡') == 'Zi Wang')
     if zi not in preview:
         preview.extend(['…', zi])
     preview.append('…')
@@ -67,7 +69,7 @@ def render_paper(paper):
           <div class="paper-content">
             <p class="paper-meta"><span class="venue">{escape(venue)}</span>{badge}</p>
             <h3 id="title-{paper['id']}"><a href="{destination}">{title}</a></h3>
-            {render_authors(paper['authors'], paper.get('author_summary'))}
+            {render_authors(paper['authors'], paper.get('author_summary'), paper.get('contribution_role'), paper.get('author_legend'))}
             <p class="paper-summary">{escape(paper['summary'])}</p>
             <div class="paper-links">{' '.join(links)}</div>
           </div>
@@ -77,8 +79,8 @@ def render_paper(paper):
 def main():
     assert len({paper['id'] for paper in PAPERS}) == len(PAPERS), 'Paper IDs must be unique.'
     for paper in PAPERS:
-        assert any(name.rstrip('*') == 'Zi Wang' for name in paper['authors']), paper['id']
-        is_lead = paper['authors'][0].rstrip('*') == 'Zi Wang' or 'Zi Wang' in paper.get('equal_first_authors', [])
+        assert any(name.rstrip('*†‡') == 'Zi Wang' for name in paper['authors']), paper['id']
+        is_lead = paper['authors'][0].rstrip('*†‡') == 'Zi Wang' or 'Zi Wang' in paper.get('equal_first_authors', [])
         expected = is_lead or paper.get('selected_collaboration', False)
         assert paper['selected'] == expected, f'Selection mismatch: {paper["id"]}'
     page = (ROOT / 'templates/index.html').read_text()

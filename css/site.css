@@ -194,6 +194,7 @@ h2 { margin: 0; font: 400 39px/1.15 var(--serif); letter-spacing: -.9px; }
 .author-details { margin: 0 0 8px; }
 .author-details summary { width: fit-content; color: var(--muted); font-size: 11px; cursor: pointer; }
 .author-details .authors { margin: 5px 0 0; }
+.author-legend { margin: 6px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .publication-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0 0; color: var(--muted); font-size: 11px; }
 .empty-results { padding: 50px 0; color: var(--muted); text-align: center; }
 .background-section { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; padding: 48px 0 64px; border-top: 1px solid var(--line); }
