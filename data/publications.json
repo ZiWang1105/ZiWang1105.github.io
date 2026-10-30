@@ -246,11 +246,13 @@
       "sources": [
         "https://doorman-humanoid.github.io/",
         "https://tairanhe.com/",
-        "https://arxiv.org/abs/2512.01061"
+        "https://arxiv.org/abs/2512.01061",
+        "https://github.com/NVlabs/GR00T-VisualSim2Real"
       ],
       "links": {
         "project": "https://doorman-humanoid.github.io/",
-        "paper": "https://arxiv.org/abs/2512.01061"
+        "paper": "https://arxiv.org/abs/2512.01061",
+        "code": "https://github.com/NVlabs/GR00T-VisualSim2Real"
       },
       "summary": "An RGB-based humanoid policy learns door-opening skills in simulation and transfers to varied real-world doors.",
       "notes": "The project page explicitly marks the first three authors equal contribution. Tairan He's site lists CVPR 2026. EMBER's author list additionally includes Ye Yuan, conflicting with arXiv and the project page; prefer project/arXiv."
@@ -286,11 +288,13 @@
       ],
       "sources": [
         "https://viral-humanoid.github.io/",
-        "https://tairanhe.com/"
+        "https://tairanhe.com/",
+        "https://github.com/NVlabs/GR00T-VisualSim2Real"
       ],
       "links": {
         "project": "https://viral-humanoid.github.io/",
-        "paper": "https://arxiv.org/abs/2511.15200"
+        "paper": "https://arxiv.org/abs/2511.15200",
+        "code": "https://github.com/NVlabs/GR00T-VisualSim2Real"
       },
       "summary": "Large-scale visual simulation trains humanoid loco-manipulation policies that transfer directly to real hardware.",
       "notes": "The project explicitly marks the first four authors equal contributions. Tairan He's current homepage lists CVPR 2026."
