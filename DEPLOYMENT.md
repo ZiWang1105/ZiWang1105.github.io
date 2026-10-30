@@ -4,7 +4,7 @@ The approved redesign targets https://ziwang1105.github.io/ and the `main` branc
 
 ## GitHub Pages configuration
 
-In repository **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save. GitHub Pages was disabled before the redesign and must be enabled for the website to become accessible.
+In repository **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save. GitHub Pages is enabled for `main`; pushing a commit automatically builds and deploys the website. If publishing is disabled later, restore this branch configuration.
 
 ## Update the website
 

@@ -19,6 +19,7 @@ Then open `http://localhost:8000`.
 - `css/site.css`: responsive layout and visual styling.
 - `scripts/site.js`: Selected/All filtering, search, and teaser playback.
 - `assets/teasers/`: research animations and still-image posters.
+- `assets/fonts/`: self-hosted Inter and Newsreader fonts, with their OFL licenses and source records.
 - `data/asset-sources.json`: original media sources and transformations.
 
 After editing content or the template:

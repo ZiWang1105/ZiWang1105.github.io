@@ -1,0 +1,39 @@
+Self-hosted website fonts
+
+Retrieved: 2026-10-30
+Google Fonts CSS API: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400&display=swap
+Request User-Agent: Mozilla/5.0
+
+Processing:
+Official Google Fonts TrueType files were subset with fontTools and encoded as WOFF2.
+Included Unicode ranges: U+0000-024F, U+0300-036F, U+1E00-1EFF, U+2000-206F,
+U+2070-209F, U+20A0-20CF, U+2100-214F, U+2190-21FF, U+2212, U+FEFF, U+FFFD,
+plus characters present in the website template and publication data.
+Font naming records and all layout features were preserved.
+All current publication author names were checked against each font character map.
+
+Files:
+inter-regular.woff2 — Inter, normal, weight 400
+  Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+  Source SHA-256: 1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba
+  WOFF2 SHA-256: efa84597c32da2d26fd115f0f193a70dfcd1a683367ed9fad99f7c9f3f243dfc
+inter-medium.woff2 — Inter, normal, weight 500
+  Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+  Source SHA-256: 8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63
+  WOFF2 SHA-256: d2050e4848ec12dff151800d633ccb23f07230f685f385042a2d5495d4e3b0c8
+inter-semibold.woff2 — Inter, normal, weight 600
+  Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+  Source SHA-256: e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7
+  WOFF2 SHA-256: 37e3d317a78b3adcf63fefd077ca0285ff2d81f9cceb9ba6a76ded18edc6637e
+inter-bold.woff2 — Inter, normal, weight 700
+  Source: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+  Source SHA-256: b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c
+  WOFF2 SHA-256: fedcd368c57ecbf9a8cb89cb53b120b10b70834f2669cb10b797ddb9e8f5d81a
+newsreader-regular.woff2 — Newsreader, normal, weight 400
+  Source: https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ADA.ttf
+  Source SHA-256: b8f5e0a8bdd6a12c722ca5635d9da87e77ccbb2d0172112e34e00c4e55f2cd5a
+  WOFF2 SHA-256: d6e6aaecc8fa578ba0b1ce42ca44e0632dece14f5d43fb24ce14ced1f37382a1
+
+Licenses:
+Inter-OFL.txt: https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt
+Newsreader-OFL.txt: https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt
