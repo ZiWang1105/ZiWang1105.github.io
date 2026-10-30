@@ -1,0 +1,333 @@
+{
+  "assets": [
+    {
+      "file": "assets/teasers/grail.mp4",
+      "source": "https://research.nvidia.com/labs/dair/grail/static/videos/teaser.mp4",
+      "bytes": 4662395,
+      "media_type": "video/mp4",
+      "modification": "Full official teaser transcoded to 960 x 540 H.264, CRF 26, 25 fps, no audio, faststart enabled.",
+      "project_or_source_page": "https://research.nvidia.com/labs/dair/grail/",
+      "width": 960,
+      "height": 540,
+      "duration_seconds": 48.0,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/grail.jpg",
+      "source": "https://research.nvidia.com/labs/dair/grail/static/images/teaser.jpg",
+      "bytes": 333116,
+      "media_type": "image/jpeg",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://research.nvidia.com/labs/dair/grail/",
+      "width": 1920,
+      "height": 1080,
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/viral.mp4",
+      "source": "https://tairanhe.com/images/viral/viral-for-preview-v2-576P.mp4",
+      "bytes": 6110344,
+      "media_type": "video/mp4",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://viral-humanoid.github.io/",
+      "width": 720,
+      "height": 576,
+      "duration_seconds": 23.269633333333335,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/doorman.mp4",
+      "source": "https://tairanhe.com/images/doorman/doorman-teaser-576P.mp4",
+      "bytes": 2777933,
+      "media_type": "video/mp4",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://doorman-humanoid.github.io/",
+      "width": 720,
+      "height": 576,
+      "duration_seconds": 9.736666666666666,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/safehydra.gif",
+      "source": "https://nvlabs.github.io/SafeHydra/images/comparison_safefusion_1.gif",
+      "bytes": 310986,
+      "media_type": "image/gif",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://nvlabs.github.io/SafeHydra/",
+      "width": 1000,
+      "height": 1000,
+      "frames": 41
+    },
+    {
+      "file": "assets/teasers/chatsim.mp4",
+      "source": "https://yifanlu0227.github.io/ChatSim/static/videos_chatsim/traffic_jam_note_down2.mp4",
+      "bytes": 660769,
+      "media_type": "video/mp4",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://yifanlu0227.github.io/ChatSim/",
+      "width": 2880,
+      "height": 640,
+      "duration_seconds": 6.0,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/chatsim.jpg",
+      "source": "https://yifanlu0227.github.io/ChatSim/static/images/teaser.jpg",
+      "bytes": 349258,
+      "media_type": "image/jpeg",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://yifanlu0227.github.io/ChatSim/",
+      "width": 2012,
+      "height": 1146,
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/tbp-former.mp4",
+      "source": "https://user-images.githubusercontent.com/69421914/227251750-ddc1cf91-b323-49fa-8556-afcc268cf6fb.mp4",
+      "bytes": 617782,
+      "media_type": "video/mp4",
+      "modification": "Transcoded to 720 x 700 H.264, CRF 24, no audio, faststart enabled.",
+      "project_or_source_page": "https://github.com/MediaBrain-SJTU/TBP-Former",
+      "width": 720,
+      "height": 700,
+      "duration_seconds": 5.4,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/tbp-former.png",
+      "source": "https://raw.githubusercontent.com/MediaBrain-SJTU/TBP-Former/main/figs/fig_overview.png",
+      "bytes": 482784,
+      "media_type": "image/png",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://github.com/MediaBrain-SJTU/TBP-Former",
+      "width": 2396,
+      "height": 909,
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/sonic.mp4",
+      "source": "https://tairanhe.com/images/sonic/sonic-preview_576P.mp4",
+      "bytes": 4258999,
+      "media_type": "video/mp4",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://tairanhe.com/",
+      "width": 720,
+      "height": 576,
+      "duration_seconds": 12.5123,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/asap.mp4",
+      "source": "https://tairanhe.com/images/asap/asap-preview-gif-720P.mp4",
+      "bytes": 2276190,
+      "media_type": "video/mp4",
+      "modification": "None; original asset.",
+      "project_or_source_page": "https://tairanhe.com/",
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 16.0,
+      "codec": "h264"
+    },
+    {
+      "file": "assets/teasers/chatsim-poster.jpg",
+      "source": "https://yifanlu0227.github.io/ChatSim/static/videos_chatsim/traffic_jam_note_down2.mp4",
+      "bytes": 40098,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 800,
+      "height": 178,
+      "project_or_source_page": "https://yifanlu0227.github.io/ChatSim/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/sonic-poster.jpg",
+      "source": "https://tairanhe.com/images/sonic/sonic-preview_576P.mp4",
+      "bytes": 82949,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 720,
+      "height": 576,
+      "project_or_source_page": "https://tairanhe.com/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/grail-poster.jpg",
+      "source": "https://research.nvidia.com/labs/dair/grail/static/videos/teaser.mp4",
+      "bytes": 70886,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at 1 second from transcoded official teaser; resized to 800 x 450 JPEG.",
+      "width": 800,
+      "height": 450,
+      "project_or_source_page": "https://research.nvidia.com/labs/dair/grail/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/asap-poster.jpg",
+      "source": "https://tairanhe.com/images/asap/asap-preview-gif-720P.mp4",
+      "bytes": 56845,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 800,
+      "height": 450,
+      "project_or_source_page": "https://tairanhe.com/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/viral-poster.jpg",
+      "source": "https://tairanhe.com/images/viral/viral-for-preview-v2-576P.mp4",
+      "bytes": 82003,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 720,
+      "height": 576,
+      "project_or_source_page": "https://viral-humanoid.github.io/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/tbp-former-poster.jpg",
+      "source": "https://user-images.githubusercontent.com/69421914/227251750-ddc1cf91-b323-49fa-8556-afcc268cf6fb.mp4",
+      "bytes": 57964,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 618,
+      "height": 600,
+      "project_or_source_page": "https://github.com/MediaBrain-SJTU/TBP-Former",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/doorman-poster.jpg",
+      "source": "https://tairanhe.com/images/doorman/doorman-teaser-576P.mp4",
+      "bytes": 22609,
+      "media_type": "image/jpeg",
+      "modification": "Frame extracted at approximately 1 second, resized to at most 800 x 600 pixels and saved as JPEG.",
+      "width": 720,
+      "height": 576,
+      "project_or_source_page": "https://doorman-humanoid.github.io/",
+      "frames": 1
+    },
+    {
+      "file": "assets/teasers/safehydra.mp4",
+      "source": "https://nvlabs.github.io/SafeHydra/images/comparison_safefusion_1.gif",
+      "bytes": 27963,
+      "media_type": "video/mp4",
+      "modification": "Transcoded to 600 x 600 H.264, CRF 24, no audio, faststart enabled.",
+      "project_or_source_page": "https://nvlabs.github.io/SafeHydra/",
+      "width": 600,
+      "height": 600,
+      "frames": 41,
+      "codec": "h264",
+      "duration_seconds": 4.1
+    },
+    {
+      "file": "assets/teasers/ldip-poster.jpg",
+      "source": "https://zhenxinli.net/LargeDiscretePolicy/assets/vis_pusht_1.mp4",
+      "media_type": "image/jpeg",
+      "modification": "Still frame at approximately 1s from the accompanying official video."
+    },
+    {
+      "file": "assets/teasers/ztrs-poster.jpg",
+      "source": "https://zhenxinli.net/ZTRS/assets/video_oncoming_trimmed.mp4",
+      "media_type": "image/jpeg",
+      "modification": "Still frame at approximately 1s from the accompanying official video."
+    },
+    {
+      "file": "assets/teasers/enpire-poster.jpg",
+      "source": "https://research.nvidia.com/labs/gear/enpire/videos/website-teaser.mp4",
+      "media_type": "image/jpeg",
+      "modification": "Still frame at approximately 3s from the accompanying official video."
+    },
+    {
+      "file": "assets/portrait-ember.jpg",
+      "source": "https://ember-lab.eecs.berkeley.edu/images/people/zi.jpg",
+      "source_page": "https://ember-lab.eecs.berkeley.edu/people/",
+      "media_type": "image/jpeg",
+      "modification": "None; original EMBER Center profile photograph. Displayed with a square CSS crop."
+    },
+    {
+      "file": "assets/teasers/ldip.mp4",
+      "source": "https://zhenxinli.net/LargeDiscretePolicy/assets/vis_pusht_1.mp4",
+      "media_type": "video/mp4",
+      "modification": "Original official Push-T policy rollout; no transformation."
+    },
+    {
+      "file": "assets/teasers/ztrs.mp4",
+      "source": "https://zhenxinli.net/ZTRS/assets/video_oncoming_trimmed.mp4",
+      "media_type": "video/mp4",
+      "modification": "Full official video transcoded to H.264 960×540, up to 24 fps, CRF 25, audio omitted, faststart."
+    },
+    {
+      "file": "assets/teasers/enpire.mp4",
+      "source": "https://research.nvidia.com/labs/gear/enpire/videos/website-teaser.mp4",
+      "media_type": "video/mp4",
+      "modification": "Full official video transcoded to H.264 960×540, up to 24 fps, CRF 25, audio omitted, faststart."
+    },
+    {
+      "file": "assets/teasers/had-poster.jpg",
+      "source": "https://arxiv.org/pdf/2604.03581",
+      "media_type": "image/jpeg",
+      "figure": 2,
+      "page": 4,
+      "modification": "Rendered the complete method figure from the source PDF at approximately 1600 pixels wide. Cropped surrounding page content and caption; preserved all figure panels, labels, and aspect ratio. Saved as high-quality JPEG.",
+      "rationale": "No official project animation found in targeted title and author search; Figure 2 is the actual complete HAD architecture."
+    },
+    {
+      "file": "assets/teasers/drivesuprim-poster.jpg",
+      "source": "https://arxiv.org/pdf/2506.06659",
+      "media_type": "image/jpeg",
+      "figure": 2,
+      "page": 4,
+      "modification": "Rendered the complete method figure from the source PDF at approximately 1600 pixels wide. Cropped surrounding page content and caption; preserved all figure panels, labels, and aspect ratio. Saved as high-quality JPEG.",
+      "rationale": "Official DriveSuprim repository presents its architecture as a static image and links no suitable animation."
+    },
+    {
+      "file": "assets/teasers/gtrs-poster.jpg",
+      "source": "https://arxiv.org/pdf/2506.06664",
+      "media_type": "image/jpeg",
+      "figure": 1,
+      "page": 2,
+      "modification": "Rendered the complete method figure from the source PDF at approximately 1600 pixels wide. Cropped surrounding page content and caption; preserved all figure panels, labels, and aspect ratio. Saved as high-quality JPEG.",
+      "rationale": "Official GTRS repository presents its three-pillar architecture as a static image; no suitable method animation found."
+    },
+    {
+      "file": "assets/teasers/scorer-finetuning-poster.jpg",
+      "source": "https://drive.google.com/file/d/1M9IKGcDwaOj-Pp8U25EuBXscovx3bY7C/view",
+      "media_type": "image/jpeg",
+      "figure": 1,
+      "page": 2,
+      "modification": "Rendered the complete method figure from the source PDF at approximately 1600 pixels wide. Cropped surrounding page content and caption; preserved all figure panels, labels, and aspect ratio. Saved as high-quality JPEG.",
+      "rationale": "First-author publication page links this paper without a project animation; Figure 1 is the overall GTR2S method framework."
+    },
+    {
+      "file": "assets/teasers/dialoguenerf-poster.jpg",
+      "source": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs44267-024-00057-8/MediaObjects/44267_2024_57_Fig5_HTML.jpg",
+      "source_page": "https://link.springer.com/article/10.1007/s44267-024-00057-8",
+      "media_type": "image/jpeg",
+      "figure": "Figure 5",
+      "modification": "Proportional resize to 1600 px width; high-quality JPEG conversion. Full source bounds retained; no panel, label, or diagram crop. No generated or invented content.",
+      "rationale": "Official published method framework, showing multimodal conditions, pose generation, torso deformation, and speaker/listener rendering. No official project animation was found."
+    },
+    {
+      "file": "assets/teasers/v2x-incop-poster.jpg",
+      "source": "https://arxiv.org/html/2304.11821v2/framework_0218.drawio.png",
+      "source_page": "https://arxiv.org/abs/2304.11821",
+      "media_type": "image/jpeg",
+      "figure": "Figure 3",
+      "modification": "Proportional resize to 1600 px width; high-quality JPEG conversion. Full source bounds retained; no panel, label, or diagram crop. No generated or invented content.",
+      "rationale": "Exact paper system overview, showing communication-adaptive historical information, missing information recovery, and the full cooperative perception pipeline. No official project animation was found."
+    },
+    {
+      "file": "assets/teasers/safehydra-poster.jpg",
+      "source": "https://nvlabs.github.io/SafeHydra/images/SafeFusion_pipeline.png",
+      "source_page": "https://nvlabs.github.io/SafeHydra/",
+      "media_type": "image/jpeg",
+      "modification": "Full official SafeFusion method overview, proportionally resized to at most 1800 px wide and saved as JPEG. No panels cropped.",
+      "rationale": "User requested the IROS paper method figure instead of its animated teaser."
+    }
+  ],
+  "notes": [
+    "Source assets credited individually. This report does not grant a new license or transfer copyright.",
+    "All video files and poster images were decoded successfully. GIF was verified with Pillow.",
+    "GRAIL, SafeHydra and TBP-Former are transcoded for compact browser playback; other videos retain original bytes.",
+    "ChatSim is panoramic (2880 x 640). TBP-Former is nearly square; use contain to preserve all scientific panels."
+  ]
+}

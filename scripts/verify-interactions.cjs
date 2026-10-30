@@ -1,0 +1,75 @@
+/* Optional interaction checks: npm install --no-save linkedom@0.18.12 */
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
+const { parseHTML } = require('linkedom');
+const root = path.resolve(__dirname, '..');
+const source = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const script = fs.readFileSync(path.join(root, 'scripts/site.js'), 'utf8');
+
+function setup({ reduced = false, saveData = false, query = '' } = {}) {
+  const { document, window } = parseHTML(source);
+  let preferenceChange;
+  const preferences = { matches: reduced, addEventListener: (_, callback) => { preferenceChange = callback; } };
+  const pageWindow = {
+    matchMedia: () => preferences,
+    location: { search: query, href: `https://example.com/${query}` },
+    history: { replaceState() {} }
+  };
+  for (const video of document.querySelectorAll('video')) {
+    video.play = () => { video.playing = true; return Promise.resolve(); };
+    video.pause = () => { video.playing = false; };
+  }
+  class Observer {
+    constructor(callback) { this.callback = callback; }
+    observe(target) { this.callback([{ target, isIntersecting: true }]); }
+  }
+  pageWindow.IntersectionObserver = Observer;
+  vm.runInNewContext(script, {
+    document, window: pageWindow, navigator: { connection: { saveData } },
+    URL, URLSearchParams, IntersectionObserver: Observer
+  });
+  return {
+    document,
+    visible: () => [...document.querySelectorAll('.paper')].filter(p => !p.hidden),
+    click: selector => document.querySelector(selector).click(),
+    search: text => {
+      const input = document.querySelector('#paper-search');
+      input.value = text;
+      input.dispatchEvent(new window.Event('input'));
+    },
+    preferenceChange: value => preferenceChange({ matches: value })
+  };
+}
+const page = setup();
+assert.equal(page.visible().length, 6);
+assert.ok(page.visible().every(p => p.dataset.selected === 'true'));
+page.click('[data-filter="all"]');
+assert.equal(page.visible().length, 17);
+page.search('Large Discrete Policy');
+assert.equal(page.visible().length, 1);
+assert.equal(page.visible()[0].id, 'paper-ldip');
+page.click('[data-filter="selected"]');
+assert.equal(page.visible().length, 0);
+assert.equal(page.document.querySelector('#empty-results').hidden, false);
+page.search('');
+assert.equal(page.visible().length, 6);
+page.search('CVPR 2024');
+assert.equal(page.visible().length, 1);
+assert.equal(page.visible()[0].id, 'paper-chatsim');
+page.search('Zi Wang');
+assert.equal(page.visible().length, 6);
+page.click('#motion-toggle');
+assert.ok([...page.document.querySelectorAll('video')].every(v => !v.playing));
+page.click('#motion-toggle');
+assert.ok([...page.document.querySelectorAll('.paper:not([hidden]) video')].every(v => v.playing));
+page.preferenceChange(true);
+assert.ok([...page.document.querySelectorAll('video')].every(v => !v.playing));
+for (const options of [{ reduced: true }, { saveData: true }]) {
+  const accessiblePage = setup(options);
+  assert.ok([...accessiblePage.document.querySelectorAll('video')].every(v => !v.playing));
+  assert.equal(accessiblePage.document.querySelector('#motion-toggle').textContent, 'Play teasers');
+}
+assert.equal(setup({ query: '?papers=all' }).visible().length, 17);
+console.log('PASS: Selected/All, search by title/author/venue, empty results, deep link, pause/play, reduced motion, and data-saving behavior.');

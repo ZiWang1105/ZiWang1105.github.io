@@ -1,0 +1,657 @@
+{
+  "scholar_url": "https://scholar.google.com/citations?user=0SuL2yUAAAAJ&hl=en",
+  "scholar_status": "The identifier is linked in the existing repository. Direct retrieval was blocked (HTTP 429), so this is not a verified export of the complete Scholar profile.",
+  "completeness": "Seventeen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report. One further survey is a plausible identity match but should be confirmed before inclusion. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
+  "selected_rule": "Include only papers where Zi Wang is the first author or explicitly marked as an equal-contribution co-first author. There are six verified selected papers.",
+  "selected_ids": [
+    "grail",
+    "doorman",
+    "viral",
+    "safehydra",
+    "chatsim",
+    "tbp-former"
+  ],
+  "papers": [
+    {
+      "id": "ldip",
+      "title": "Large Discrete Policy: Advancing Explicit Behavior Modeling with Stochastic Iterative Scoring",
+      "year": 2026,
+      "venue": "NeurIPS 2026",
+      "selected": false,
+      "new_to_existing_site": true,
+      "authors": [
+        "Zhenxin Li",
+        "Nadine Chang",
+        "Xinglong Sun",
+        "Jingde Chen",
+        "Wenhao Yao",
+        "Zi Wang",
+        "Maying Shen",
+        "Yu-Gang Jiang",
+        "Zuxuan Wu",
+        "Shiyi Lan",
+        "Jose M. Alvarez"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://zhenxinli.net/LargeDiscretePolicy/",
+        "https://zhenxinli.net/"
+      ],
+      "links": {
+        "project": "https://zhenxinli.net/LargeDiscretePolicy/",
+        "paper": "https://arxiv.org/abs/2609.07049"
+      },
+      "summary": "A discrete policy selects plausible actions through repeated stochastic scoring and candidate pruning.",
+      "notes": "The project page supplies the author list; the first author's current homepage lists NeurIPS 2026. Zi Wang has no equal-contribution mark."
+    },
+    {
+      "id": "enpire",
+      "title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+      "year": 2026,
+      "venue": "CoRL 2026",
+      "selected": false,
+      "new_to_existing_site": true,
+      "authors": [
+        "Wenli Xiao*",
+        "Jia Xie*",
+        "Tonghe Zhang*",
+        "Haotian Lin*",
+        "Letian \"Max\" Fu",
+        "Haoru Xue",
+        "Jalen Lu",
+        "Yi Yang",
+        "Cunxi Dai",
+        "Zi Wang",
+        "Jimmy Wu",
+        "Guanzhi Wang",
+        "S. Shankar Sastry",
+        "Ken Goldberg",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu",
+        "Guanya Shi"
+      ],
+      "equal_first_authors": [
+        "Wenli Xiao",
+        "Jia Xie",
+        "Tonghe Zhang",
+        "Haotian Lin"
+      ],
+      "sources": [
+        "https://ember-lab.eecs.berkeley.edu/publications/",
+        "https://jia-xie.com/",
+        "https://arxiv.org/abs/2606.19980"
+      ],
+      "links": {
+        "project": "https://research.nvidia.com/labs/gear/enpire/",
+        "paper": "https://arxiv.org/abs/2606.19980"
+      },
+      "summary": "Coding agents improve physical robot policies through automated resets, rollouts, verification, and algorithm refinement.",
+      "notes": "EMBER and co-first author Jia Xie explicitly list CoRL 2026 and the equal-contribution authors. Zi Wang is not one of them."
+    },
+    {
+      "id": "grail",
+      "title": "GRAIL: Generating Humanoid Loco-Manipulation from World Models",
+      "year": 2026,
+      "venue": "CoRL 2026",
+      "distinction": "Oral",
+      "selected": true,
+      "new_to_existing_site": true,
+      "authors": [
+        "Tianyi Xie*",
+        "Haotian Zhang*",
+        "Jinhyung Park*",
+        "Zi Wang*",
+        "Bowen Wen",
+        "Jiefeng Li",
+        "Xueting Li",
+        "Qingwei Ben",
+        "Haoyang Weng",
+        "Yufei Ye",
+        "David Minor",
+        "Tingwu Wang",
+        "Chenfanfu Jiang",
+        "Sanja Fidler",
+        "Jan Kautz",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu",
+        "Zhengyi Luo",
+        "Umar Iqbal",
+        "Ye Yuan"
+      ],
+      "equal_first_authors": [
+        "Tianyi Xie",
+        "Haotian Zhang",
+        "Jinhyung Park",
+        "Zi Wang"
+      ],
+      "sources": [
+        "https://research.nvidia.com/labs/dair/grail/"
+      ],
+      "links": {
+        "project": "https://research.nvidia.com/labs/dair/grail/",
+        "paper": "https://arxiv.org/abs/2606.05160",
+        "code": "https://github.com/NVlabs/GRAIL"
+      },
+      "summary": "Video world models generate humanoid training interactions grounded in known 3D scenes for visual sim-to-real learning.",
+      "notes": "NVIDIA's project page explicitly marks four Co-First Authors and CoRL 2026 Oral Presentation. Earlier title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors. Use the current project title."
+    },
+    {
+      "id": "had",
+      "title": "HAD: Combining Hierarchical Diffusion with Metric-Decoupled RL for End-to-End Driving",
+      "year": 2026,
+      "venue": "arXiv",
+      "selected": false,
+      "new_to_existing_site": true,
+      "authors": [
+        "Wenhao Yao",
+        "Xinglong Sun",
+        "Zhenxin Li",
+        "Shiyi Lan",
+        "Zi Wang",
+        "Jose M. Alvarez",
+        "Zuxuan Wu"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://arxiv.org/abs/2604.03581",
+        "https://arxiv.org/html/2604.03581v1"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2604.03581"
+      },
+      "summary": "Hierarchical diffusion and metric-decoupled reinforcement learning improve end-to-end driving trajectories.",
+      "notes": "A secondary site labels this ECCV 2026, but no primary venue confirmation was obtained. Keep arXiv until verified. The author block does not mark Zi Wang as equal first."
+    },
+    {
+      "id": "sonic",
+      "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+      "year": 2026,
+      "venue": "Science Robotics",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Zhengyi Luo*",
+        "Ye Yuan*",
+        "Tingwu Wang*",
+        "Chenran Li*",
+        "Fernando Castañeda",
+        "Sirui Chen",
+        "Zi-Ang Cao",
+        "Jiefeng Li",
+        "David Minor",
+        "Qingwei Ben",
+        "Jinhyung Park",
+        "David Sami",
+        "Zi Wang",
+        "Xingye Da",
+        "Runyu Ding",
+        "Cyrus Hogg",
+        "Lina Song",
+        "Edy Lim",
+        "Eugene Jeong",
+        "Tairan He",
+        "Haoru Xue",
+        "Wenli Xiao",
+        "Simon Yuen",
+        "Jan Kautz",
+        "Yan Chang",
+        "Umar Iqbal",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu"
+      ],
+      "equal_first_authors": [
+        "Zhengyi Luo",
+        "Ye Yuan",
+        "Tingwu Wang",
+        "Chenran Li"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2511.07820",
+        "https://tairanhe.com/data/TairanHe_CV_20251127.pdf"
+      ],
+      "links": {
+        "project": "https://nvlabs.github.io/SONIC/",
+        "paper": "https://arxiv.org/abs/2511.07820",
+        "doi": "https://doi.org/10.1126/scirobotics.aed4592"
+      },
+      "summary": "Scaling motion data, model capacity, and compute produces a generalist humanoid whole-body controller.",
+      "notes": "arXiv v4 gives journal reference Science Robotics 11 (117), eaed4592 (2026) and a revised 28-author list. The existing site has an older 26-author list. Equal first marks are from the coauthor CV; Zi Wang is not co-first."
+    },
+    {
+      "id": "doorman",
+      "title": "Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer",
+      "year": 2026,
+      "venue": "CVPR 2026",
+      "selected": true,
+      "new_to_existing_site": false,
+      "authors": [
+        "Haoru Xue*",
+        "Tairan He*",
+        "Zi Wang*",
+        "Qingwei Ben",
+        "Wenli Xiao",
+        "Zhengyi Luo",
+        "Xingye Da",
+        "Fernando Castañeda",
+        "Guanya Shi",
+        "Shankar Sastry",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu"
+      ],
+      "equal_first_authors": [
+        "Haoru Xue",
+        "Tairan He",
+        "Zi Wang"
+      ],
+      "sources": [
+        "https://doorman-humanoid.github.io/",
+        "https://tairanhe.com/",
+        "https://arxiv.org/abs/2512.01061"
+      ],
+      "links": {
+        "project": "https://doorman-humanoid.github.io/",
+        "paper": "https://arxiv.org/abs/2512.01061"
+      },
+      "summary": "An RGB-based humanoid policy learns door-opening skills in simulation and transfers to varied real-world doors.",
+      "notes": "The project page explicitly marks the first three authors equal contribution. Tairan He's site lists CVPR 2026. EMBER's author list additionally includes Ye Yuan, conflicting with arXiv and the project page; prefer project/arXiv."
+    },
+    {
+      "id": "viral",
+      "title": "VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation",
+      "year": 2026,
+      "venue": "CVPR 2026",
+      "selected": true,
+      "new_to_existing_site": false,
+      "authors": [
+        "Tairan He*",
+        "Zi Wang*",
+        "Haoru Xue*",
+        "Qingwei Ben*",
+        "Zhengyi Luo",
+        "Wenli Xiao",
+        "Ye Yuan",
+        "Xingye Da",
+        "Fernando Castañeda",
+        "Shankar Sastry",
+        "Changliu Liu",
+        "Guanya Shi",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu"
+      ],
+      "equal_first_authors": [
+        "Tairan He",
+        "Zi Wang",
+        "Haoru Xue",
+        "Qingwei Ben"
+      ],
+      "sources": [
+        "https://viral-humanoid.github.io/",
+        "https://tairanhe.com/"
+      ],
+      "links": {
+        "project": "https://viral-humanoid.github.io/",
+        "paper": "https://arxiv.org/abs/2511.15200"
+      },
+      "summary": "Large-scale visual simulation trains humanoid loco-manipulation policies that transfer directly to real hardware.",
+      "notes": "The project explicitly marks the first four authors equal contributions. Tairan He's current homepage lists CVPR 2026."
+    },
+    {
+      "id": "ztrs",
+      "title": "Zero-Human Demonstration End-to-end Autonomous Driving with Trajectory Scorer",
+      "year": 2026,
+      "venue": "ECCV 2026",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Zhenxin Li",
+        "Nadine Chang",
+        "Wenhao Yao",
+        "Xinglong Sun",
+        "Zi Wang",
+        "Maying Shen",
+        "Jingde Chen",
+        "Jingyu Song",
+        "Kailin Li",
+        "Zuxuan Wu",
+        "Shiyi Lan",
+        "Jose M. Alvarez"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://arxiv.org/abs/2510.24108",
+        "https://zhenxinli.net/ZTRS/",
+        "https://zhenxinli.net/"
+      ],
+      "links": {
+        "project": "https://zhenxinli.net/ZTRS/",
+        "paper": "https://arxiv.org/abs/2510.24108"
+      },
+      "summary": "Trajectory scoring and exhaustive policy optimization enable end-to-end driving without human demonstrations.",
+      "notes": "arXiv v2 and project have a new title and 12-author list. The first author's homepage lists this same work under its former ZTRS title as ECCV 2026. An aggregator labels ICLR 2026; do not use that unsupported venue."
+    },
+    {
+      "id": "drivesuprim",
+      "title": "DriveSuprim: Towards Precise Trajectory Selection for End-to-End Planning",
+      "year": 2026,
+      "venue": "AAAI 2026",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Wenhao Yao",
+        "Zhenxin Li",
+        "Shiyi Lan",
+        "Zi Wang",
+        "Xinglong Sun",
+        "Jose M. Alvarez",
+        "Zuxuan Wu"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://arxiv.org/abs/2506.06659",
+        "https://zhenxinli.net/"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06659"
+      },
+      "summary": "Coarse-to-fine candidate filtering improves precise trajectory selection for end-to-end planning.",
+      "notes": "The arXiv comments explicitly say accepted to AAAI 2026."
+    },
+    {
+      "id": "scorer-finetuning",
+      "title": "Reinforcement Fine-tuning of End-to-end Trajectory Scorers",
+      "year": 2025,
+      "venue": "ICCV 2025 challenge technical report",
+      "distinction": "Runner-up and Innovation Award",
+      "selected": false,
+      "new_to_existing_site": true,
+      "authors": [
+        "Zhenxin Li",
+        "Wenhao Yao",
+        "Zi Wang",
+        "Xinglong Sun",
+        "Joshua Chen",
+        "Nadine Chang",
+        "Maying Shen",
+        "Zuxuan Wu",
+        "Shiyi Lan",
+        "Jose M. Alvarez"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://zhenxinli.net/"
+      ],
+      "links": {
+        "paper": "https://drive.google.com/file/d/1M9IKGcDwaOj-Pp8U25EuBXscovx3bY7C/view"
+      },
+      "summary": "Reinforcement fine-tuning adapts trajectory scorers for closed-loop driving in photorealistic simulation.",
+      "notes": "The first author lists this separately from GTRS and ZTRS. The venue description is Driving Simulation from Real-World Data, Closed-Loop Driving in Photorealistic Simulation. This is a challenge report, not a main-conference paper."
+    },
+    {
+      "id": "gtrs",
+      "title": "Generalized Trajectory Scoring for End-to-end Multimodal Planning",
+      "year": 2025,
+      "venue": "Technical report",
+      "distinction": "1st Place, CVPR 2025 Autonomous Grand Challenge, End-to-end Driving",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Zhenxin Li",
+        "Wenhao Yao",
+        "Zi Wang",
+        "Xinglong Sun",
+        "Joshua Chen",
+        "Nadine Chang",
+        "Maying Shen",
+        "Zuxuan Wu",
+        "Shiyi Lan",
+        "Jose M. Alvarez"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://arxiv.org/abs/2506.06664"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06664"
+      },
+      "summary": "Generalized trajectory scoring combines coarse and fine candidate evaluation for multimodal driving plans.",
+      "notes": "arXiv comments identify the first-place challenge solution."
+    },
+    {
+      "id": "safehydra",
+      "title": "Enhancing Autonomous Driving Safety with Collision Scenario Integration",
+      "year": 2025,
+      "venue": "IROS 2025",
+      "distinction": "Oral",
+      "selected": true,
+      "new_to_existing_site": false,
+      "authors": [
+        "Zi Wang",
+        "Shiyi Lan",
+        "Xinglong Sun",
+        "Nadine Chang",
+        "Zhenxin Li",
+        "Zhiding Yu",
+        "Jose M. Alvarez"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://nvlabs.github.io/SafeHydra/",
+        "https://zhenxinli.net/",
+        "https://ziwang1105.github.io/"
+      ],
+      "links": {
+        "project": "https://nvlabs.github.io/SafeHydra/",
+        "paper": "https://arxiv.org/abs/2503.03957"
+      },
+      "summary": "Collision scenario generation and safety-oriented training improve planning in collision-prone driving scenes.",
+      "notes": "Zi Wang is first author. IROS is confirmed by coauthor homepage; Oral is retained from Zi Wang's existing site.",
+      "media_kind": "figure"
+    },
+    {
+      "id": "asap",
+      "title": "ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+      "year": 2025,
+      "venue": "RSS 2025",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Tairan He*",
+        "Jiawei Gao*",
+        "Wenli Xiao*",
+        "Yuanhang Zhang*",
+        "Zi Wang",
+        "Jiashun Wang",
+        "Zhengyi Luo",
+        "Guanqi He",
+        "Nikhil Sobanbab",
+        "Chaoyi Pan",
+        "Zeji Yi",
+        "Guannan Qu",
+        "Kris Kitani",
+        "Jessica Hodgins",
+        "Linxi \"Jim\" Fan",
+        "Yuke Zhu",
+        "Changliu Liu",
+        "Guanya Shi"
+      ],
+      "equal_first_authors": [
+        "Tairan He",
+        "Jiawei Gao",
+        "Wenli Xiao",
+        "Yuanhang Zhang"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2502.01143",
+        "https://ziwang1105.github.io/"
+      ],
+      "links": {
+        "project": "https://agile.human2humanoid.com/",
+        "paper": "https://arxiv.org/abs/2502.01143"
+      },
+      "summary": "A learned residual action model aligns simulated physics with real hardware for agile humanoid motion.",
+      "notes": "RSS 2025 is in arXiv comments. Zi Wang is fifth author and is not marked equal contribution in the existing author list."
+    },
+    {
+      "id": "chatsim",
+      "title": "Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents",
+      "year": 2024,
+      "venue": "CVPR 2024",
+      "distinction": "Highlight",
+      "selected": true,
+      "new_to_existing_site": false,
+      "authors": [
+        "Yuxi Wei*",
+        "Zi Wang*",
+        "Yifan Lu*",
+        "Chenxin Xu*",
+        "Changxing Liu",
+        "Hao Zhao",
+        "Siheng Chen",
+        "Yanfeng Wang"
+      ],
+      "equal_first_authors": [
+        "Yuxi Wei",
+        "Zi Wang",
+        "Yifan Lu",
+        "Chenxin Xu"
+      ],
+      "sources": [
+        "https://yifanlu0227.github.io/ChatSim/",
+        "https://openaccess.thecvf.com/content/CVPR2024/html/Wei_Editable_Scene_Simulation_for_Autonomous_Driving_via_Collaborative_LLM-Agents_CVPR_2024_paper.html"
+      ],
+      "links": {
+        "project": "https://yifanlu0227.github.io/ChatSim/",
+        "paper": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wei_Editable_Scene_Simulation_for_Autonomous_Driving_via_Collaborative_LLM-Agents_CVPR_2024_paper.pdf",
+        "code": "https://github.com/yifanlu0227/ChatSim"
+      },
+      "summary": "Collaborating language-model agents edit photorealistic driving scenes from natural-language instructions.",
+      "notes": "The project explicitly marks the first four authors equal contribution and CVPR 2024 Highlight. The CVF record confirms the full eight-author list. Existing site incorrectly omits Hao Zhao and Yanfeng Wang."
+    },
+    {
+      "id": "dialoguenerf",
+      "title": "DialogueNeRF: Towards Realistic Avatar Face-to-Face Conversation Video Generation",
+      "year": 2024,
+      "venue": "Visual Intelligence",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Yichao Yan*",
+        "Zanwei Zhou*",
+        "Zi Wang",
+        "Jingnan Gao",
+        "Xiaokang Yang"
+      ],
+      "equal_first_authors": [
+        "Yichao Yan",
+        "Zanwei Zhou"
+      ],
+      "sources": [
+        "https://link.springer.com/article/10.1007/s44267-024-00057-8"
+      ],
+      "links": {
+        "paper": "https://link.springer.com/article/10.1007/s44267-024-00057-8"
+      },
+      "summary": "A neural radiance field models speakers and listeners to generate face-to-face avatar conversations.",
+      "notes": "Publisher author block marks only Yichao Yan and Zanwei Zhou with the equal-contribution note. Published August 7, 2024, volume 2, article 24."
+    },
+    {
+      "id": "v2x-incop",
+      "title": "Interruption-Aware Cooperative Perception for V2X Communication-Aided Autonomous Driving",
+      "year": 2024,
+      "venue": "IEEE Transactions on Intelligent Vehicles",
+      "selected": false,
+      "new_to_existing_site": false,
+      "authors": [
+        "Shunli Ren",
+        "Zixing Lei",
+        "Zi Wang",
+        "Mehrdad Dianati",
+        "Yafei Wang",
+        "Siheng Chen",
+        "Wenjun Zhang"
+      ],
+      "equal_first_authors": [],
+      "sources": [
+        "https://arxiv.org/abs/2304.11821",
+        "https://ziwang1105.github.io/"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2304.11821"
+      },
+      "summary": "Historical cooperative information helps recover missing perception messages during V2X communication interruptions.",
+      "notes": "arXiv explicitly gives IEEE Transactions on Intelligent Vehicles 2024. No evidence of Zi Wang co-first authorship was found."
+    },
+    {
+      "id": "tbp-former",
+      "title": "TBP-Former: Learning Temporal Bird's-Eye-View Pyramid for Joint Perception and Prediction in Vision-Centric Autonomous Driving",
+      "year": 2023,
+      "venue": "CVPR 2023",
+      "selected": true,
+      "new_to_existing_site": false,
+      "authors": [
+        "Shaoheng Fang*",
+        "Zi Wang*",
+        "Yiqi Zhong",
+        "Junhao Ge",
+        "Siheng Chen"
+      ],
+      "equal_first_authors": [
+        "Shaoheng Fang",
+        "Zi Wang"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2303.09998v2",
+        "https://bshfang.github.io/",
+        "https://cgit.usc.edu/publications/"
+      ],
+      "links": {
+        "paper": "https://openaccess.thecvf.com/content/CVPR2023/papers/Fang_TBP-Former_Learning_Temporal_Birds-Eye-View_Pyramid_for_Joint_Perception_and_Prediction_CVPR_2023_paper.pdf",
+        "code": "https://github.com/MediaBrain-SJTU/TBP-Former"
+      },
+      "summary": "A temporal bird’s-eye-view pyramid combines spatial and temporal features for joint perception and prediction.",
+      "notes": "The paper HTML explicitly says Shaoheng Fang and Zi Wang contributed equally. The arXiv version includes Yanfeng Wang, but the first author's homepage, USC laboratory publication list, and CVPR bibliographic listing use the five-author conference version. Retain the five-author conference version."
+    }
+  ],
+  "candidates_requiring_identity_confirmation": [
+    {
+      "title": "Beyond Textual Chain-of-Thought: A Survey on Action-Grounded Reasoning in Autonomous Driving",
+      "year": 2026,
+      "venue": "Findings of EMNLP 2026",
+      "selected": false,
+      "authors": [
+        "Zhengxu Tang",
+        "Xiaozhou Zhang",
+        "Guofeng Cui",
+        "Ziyu Gong",
+        "Zi Wang",
+        "Yunfei Shi",
+        "Ruifeng Deng",
+        "Chengzhi Qi",
+        "Ke Chen",
+        "Sachin Patil",
+        "Tianjun Xiao",
+        "Langechuan Liu",
+        "Pichao Wang"
+      ],
+      "equal_first_authors": [
+        "Zhengxu Tang",
+        "Xiaozhou Zhang"
+      ],
+      "paper": "https://arxiv.org/abs/2609.01659",
+      "sources": [
+        "https://arxiv.org/html/2609.01659v1",
+        "https://aclanthology.org/people/zi-wang-1928/"
+      ],
+      "note": "The paper author is affiliated with NVIDIA and works in the same domain, but no direct link to ZiWang1105 or the known Scholar identifier was found. Avoid silently attributing a potentially namesake work."
+    }
+  ],
+  "reference_design_observations": "Tairan He's current site uses compact biography and links, a short news list, then publication entries with authors, venue, project/PDF links, abstracts, and BibTeX. The reference content is current enough to confirm VIRAL and DoorMan as CVPR 2026.",
+  "verified_at": "2026-10-30",
+  "caveats": [
+    "The identifier is linked in the existing repository. Direct retrieval was blocked (HTTP 429), so this is not a verified export of the complete Scholar profile.",
+    "Seventeen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report. One further survey is a plausible identity match but should be confirmed before inclusion. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
+    "HAD is conservatively listed as arXiv because an ECCV claim was found only on secondary sources.",
+    "The separately listed ICCV 2025 challenge report is not a peer-reviewed main-conference paper.",
+    "The possible EMNLP 2026 survey remains excluded from the papers array pending identity confirmation."
+  ]
+}
