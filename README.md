@@ -1,6 +1,6 @@
 # Zi Wang — Research Website
 
-A static academic portfolio for Zi Wang, PhD student at UC Berkeley, affiliated with BAIR and advised by Prof. Shankar Sastry. NVIDIA is listed as a previous Research Engineer role.
+A static academic portfolio for Zi Wang, PhD student at UC Berkeley, affiliated with BAIR and the EMBER Center and advised by Prof. Shankar Sastry. NVIDIA is listed as a previous Research Engineer role.
 
 ## Preview
 
