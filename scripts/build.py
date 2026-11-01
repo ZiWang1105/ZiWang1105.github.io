@@ -43,10 +43,12 @@ def render_media(paper):
              'tbp-former': 'TBP-Former', 'dialoguenerf': 'DialogueNeRF',
              'scorer-finetuning': 'Scorer fine-tuning', 'v2x-incop': 'V2X / InCoop',
              'drivesuprim': 'DriveSuprim', 'ldip': 'LDiP'}.get(slug, slug.upper())
+    label = paper.get('media_label', label)
     if paper.get("media_kind") != "figure" and (ROOT / video).exists():
         return f'''<figure class="paper-media video-media" data-media="{escape(slug)}"><a href="{escape(project)}" aria-label="View {escape(label)} project or paper"><img src="{poster}" alt="{escape(label)} research demonstration" loading="lazy" width="800" height="500"><video data-src="{video}" poster="{poster}" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video><span class="media-label">{escape(label)}</span></a></figure>'''
     if (ROOT / poster).exists():
-        return f'<figure class="paper-media figure-media" data-media="{escape(slug)}"><a href="{poster}" aria-label="Open full-size method figure for {escape(label)}"><img src="{poster}" alt="{escape(label)} method and framework diagram" loading="lazy" width="800" height="500"></a></figure>'
+        alt = paper.get('figure_alt', f'{label} method and framework diagram')
+        return f'<figure class="paper-media figure-media" data-media="{escape(slug)}"><a href="{poster}" aria-label="Open full-size figure for {escape(label)}"><img src="{poster}" alt="{escape(alt)}" loading="lazy" width="800" height="500"></a></figure>'
     raise FileNotFoundError(f'{slug}: add a research animation or a method-figure poster before building.')
 
 
@@ -62,7 +64,7 @@ def render_paper(paper):
         if kind in paper['links']:
             links.append(f'<a href="{escape(paper["links"][kind])}" aria-label="{label}: {title}">{label} <span aria-hidden="true">↗</span></a>')
     if paper.get('media_kind') == 'figure' or not (ROOT / f'assets/teasers/{paper["id"]}.mp4').exists():
-        links.append(f'<a href="assets/teasers/{paper["id"]}-poster.jpg" aria-label="Full-size method figure: {title}">Figure <span aria-hidden="true">↗</span></a>')
+        links.append(f'<a href="assets/teasers/{paper["id"]}-poster.jpg" aria-label="Full-size figure: {title}">Figure <span aria-hidden="true">↗</span></a>')
     query = escape(' '.join(filter(None, [paper['title'], ' '.join(paper['authors']), paper.get('author_summary', ''), venue, paper['id']])).lower())
     return f'''        <article class="paper" id="paper-{paper['id']}" data-selected="{str(paper['selected']).lower()}" data-search="{query}" aria-labelledby="title-{paper['id']}">
           {render_media(paper)}

@@ -1,7 +1,7 @@
 {
   "scholar_url": "https://scholar.google.com/citations?user=0SuL2yUAAAAJ&hl=en",
   "scholar_status": "The identifier is linked in the existing repository. Direct retrieval was blocked (HTTP 429), so this is not a verified export of the complete Scholar profile.",
-  "completeness": "Seventeen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report. One further survey is a plausible identity match but should be confirmed before inclusion. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
+  "completeness": "Eighteen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report and the recent survey added following Zi Wang’s correction. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
   "selected_rule": "Include papers where Zi Wang is first author or explicitly marked as an equal-contribution co-first author, plus explicitly selected collaborations. The current selection contains six (co-)lead-authored papers and SONIC, a collaboration selected by Zi Wang.",
   "selected_ids": [
     "grail",
@@ -44,6 +44,47 @@
       },
       "summary": "A discrete policy selects plausible actions through repeated stochastic scoring and candidate pruning.",
       "notes": "The project page supplies the author list; the first author's current homepage lists NeurIPS 2026. Zi Wang has no equal-contribution mark."
+    },
+    {
+      "id": "av-cot-survey",
+      "title": "Beyond Textual Chain-of-Thought: A Survey on Action-Grounded Reasoning in Autonomous Driving",
+      "year": 2026,
+      "venue": "Findings of EMNLP 2026",
+      "selected": false,
+      "new_to_existing_site": true,
+      "authors": [
+        "Zhengxu Tang*",
+        "Xiaozhou Zhang*",
+        "Guofeng Cui",
+        "Ziyu Gong",
+        "Zi Wang",
+        "Yunfei Shi",
+        "Ruifeng Deng",
+        "Chengzhi Qi",
+        "Ke Chen",
+        "Sachin Patil",
+        "Tianjun Xiao",
+        "Langechuan Liu",
+        "Pichao Wang"
+      ],
+      "equal_first_authors": [
+        "Zhengxu Tang",
+        "Xiaozhou Zhang"
+      ],
+      "sources": [
+        "https://aclanthology.org/2026.findings-emnlp.547/",
+        "https://arxiv.org/html/2609.01659v1",
+        "https://github.com/TangZhengxu/awesome-av-cot"
+      ],
+      "links": {
+        "project": "https://github.com/TangZhengxu/awesome-av-cot",
+        "paper": "https://aclanthology.org/2026.findings-emnlp.547/"
+      },
+      "summary": "A survey of 171 papers organizing action-grounded reasoning for autonomous driving into language-based, visual-spatial, latent-dynamic, and externalized representations.",
+      "media_kind": "figure",
+      "media_label": "Action-grounded reasoning survey",
+      "figure_alt": "Survey overview: four reasoning representations connect a driving scene to an action, illustrated by yielding to a pedestrian.",
+      "notes": "Added after Zi Wang noted his missing recent survey. ACL Anthology confirms Findings of EMNLP 2026; the official paper marks Zhengxu Tang and Xiaozhou Zhang as equal contributors. Zi Wang is fifth author, so this paper appears in All. The project link is a curated paper collection, not model implementation code."
     },
     {
       "id": "enpire",
@@ -635,46 +676,12 @@
       "notes": "The paper HTML explicitly says Shaoheng Fang and Zi Wang contributed equally. The arXiv version includes Yanfeng Wang, but the first author's homepage, USC laboratory publication list, and CVPR bibliographic listing use the five-author conference version. Retain the five-author conference version."
     }
   ],
-  "candidates_requiring_identity_confirmation": [
-    {
-      "title": "Beyond Textual Chain-of-Thought: A Survey on Action-Grounded Reasoning in Autonomous Driving",
-      "year": 2026,
-      "venue": "Findings of EMNLP 2026",
-      "selected": false,
-      "authors": [
-        "Zhengxu Tang",
-        "Xiaozhou Zhang",
-        "Guofeng Cui",
-        "Ziyu Gong",
-        "Zi Wang",
-        "Yunfei Shi",
-        "Ruifeng Deng",
-        "Chengzhi Qi",
-        "Ke Chen",
-        "Sachin Patil",
-        "Tianjun Xiao",
-        "Langechuan Liu",
-        "Pichao Wang"
-      ],
-      "equal_first_authors": [
-        "Zhengxu Tang",
-        "Xiaozhou Zhang"
-      ],
-      "paper": "https://arxiv.org/abs/2609.01659",
-      "sources": [
-        "https://arxiv.org/html/2609.01659v1",
-        "https://aclanthology.org/people/zi-wang-1928/"
-      ],
-      "note": "The paper author is affiliated with NVIDIA and works in the same domain, but no direct link to ZiWang1105 or the known Scholar identifier was found. Avoid silently attributing a potentially namesake work."
-    }
-  ],
   "reference_design_observations": "Tairan He's current site uses compact biography and links, a short news list, then publication entries with authors, venue, project/PDF links, abstracts, and BibTeX. The reference content is current enough to confirm VIRAL and DoorMan as CVPR 2026.",
-  "verified_at": "2026-10-30",
+  "verified_at": "2026-11-01",
   "caveats": [
     "The identifier is linked in the existing repository. Direct retrieval was blocked (HTTP 429), so this is not a verified export of the complete Scholar profile.",
-    "Seventeen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report. One further survey is a plausible identity match but should be confirmed before inclusion. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
+    "Eighteen distinct works are supported by the existing site and primary project, author, laboratory, arXiv, or publisher sources. This includes a separately listed challenge technical report and the recent survey added following Zi Wang’s correction. No exhaustive completeness claim is warranted because Scholar could not be retrieved.",
     "HAD is conservatively listed as arXiv because an ECCV claim was found only on secondary sources.",
-    "The separately listed ICCV 2025 challenge report is not a peer-reviewed main-conference paper.",
-    "The possible EMNLP 2026 survey remains excluded from the papers array pending identity confirmation."
+    "The separately listed ICCV 2025 challenge report is not a peer-reviewed main-conference paper."
   ]
 }

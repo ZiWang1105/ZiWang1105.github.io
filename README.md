@@ -35,11 +35,11 @@ The generated `index.html` contains every publication as ordinary HTML. JavaScri
 
 Selected contains six (co-)lead-authored papers and SONIC, an explicitly selected collaboration. The generator checks author and equal-contribution records along with the explicit collaboration flag. SONIC displays NVIDIA GEAR Team and identifies Zi Wang as a core contributor in its collapsed author summary. Its full 28-author list preserves the official contribution symbols and their paper-specific legend.
 
-Current Selected list: GRAIL, SONIC, DoorMan, VIRAL, SafeHydra, ChatSim, and TBP-Former. All lists 17 verified works, including clearly labelled technical reports.
+Current Selected list: GRAIL, SONIC, DoorMan, VIRAL, SafeHydra, ChatSim, and TBP-Former. All lists 18 works, including the Findings of EMNLP 2026 survey and clearly labelled technical reports.
 
 ## Motion and accessibility
 
-Ten papers have looping, muted MP4 teasers. The other seven use method/framework figures extracted from the papers or their official publisher pages; click the figure or its Figure link to open it at full size. Every publication must have a real research visual: the build rejects missing media. Videos load near the viewport and pause when hidden, offscreen, or when the page is inactive. Reduced-motion preferences and data-saving mode disable autoplay. A visible Play/Pause teasers button controls motion. Posters remain available without JavaScript or autoplay.
+Ten papers have looping, muted MP4 teasers. The other eight use method/framework or survey overview figures from the papers or their official publisher pages; click the figure or its Figure link to open it at full size. Every publication must have a real research visual: the build rejects missing media. Videos load near the viewport and pause when hidden, offscreen, or when the page is inactive. Reduced-motion preferences and data-saving mode disable autoplay. A visible Play/Pause teasers button controls motion. Posters remain available without JavaScript or autoplay.
 
 ## Publication verification
 

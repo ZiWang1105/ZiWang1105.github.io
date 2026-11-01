@@ -322,6 +322,17 @@
       "media_type": "image/jpeg",
       "modification": "Full official SafeFusion method overview, proportionally resized to at most 1800 px wide and saved as JPEG. No panels cropped.",
       "rationale": "User requested the IROS paper method figure instead of its animated teaser."
+    },
+    {
+      "file": "assets/teasers/av-cot-survey-poster.jpg",
+      "source": "https://arxiv.org/html/2609.01659v1/figures/figure_1.png",
+      "bytes": 800281,
+      "media_type": "image/jpeg",
+      "modification": "Figure 1 converted from PNG to JPEG at original resolution, with all panels preserved.",
+      "project_or_source_page": "https://arxiv.org/html/2609.01659v1#S1.F1",
+      "width": 2363,
+      "height": 2277,
+      "frames": 1
     }
   ],
   "notes": [

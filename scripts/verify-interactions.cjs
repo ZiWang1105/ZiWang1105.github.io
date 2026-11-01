@@ -65,7 +65,16 @@ assert.deepEqual(page.visible().map(p => p.id), ['paper-sonic']);
 page.search('');
 assert.equal(page.visible().length, 7);
 page.click('[data-filter="all"]');
-assert.equal(page.visible().length, 17);
+assert.equal(page.visible().length, 18);
+page.search('Beyond Textual Chain-of-Thought');
+assert.deepEqual(page.visible().map(p => p.id), ['paper-av-cot-survey']);
+const survey = page.visible()[0];
+assert.equal(survey.querySelector('.venue').textContent, 'Findings of EMNLP 2026');
+assert.equal(survey.querySelector('.authors strong').textContent, 'Zi Wang');
+assert.ok(survey.querySelector('.figure-media img').getAttribute('alt').startsWith('Survey overview:'));
+page.click('[data-filter="selected"]');
+assert.equal(page.visible().length, 0);
+page.click('[data-filter="all"]');
 page.search('Large Discrete Policy');
 assert.equal(page.visible().length, 1);
 assert.equal(page.visible()[0].id, 'paper-ldip');
@@ -90,5 +99,5 @@ for (const options of [{ reduced: true }, { saveData: true }]) {
   assert.ok([...accessiblePage.document.querySelectorAll('video')].every(v => !v.playing));
   assert.equal(accessiblePage.document.querySelector('#motion-toggle').textContent, 'Play teasers');
 }
-assert.equal(setup({ query: '?papers=all' }).visible().length, 17);
-console.log('PASS: Selected/All, SONIC team credit and full authors, search by title/author/team/venue, empty results, deep link, pause/play, reduced motion, and data-saving behavior.');
+assert.equal(setup({ query: '?papers=all' }).visible().length, 18);
+console.log('PASS: Selected/All, survey metadata and figure, SONIC team credit and full authors, search by title/author/team/venue, empty results, deep link, pause/play, reduced motion, and data-saving behavior.');

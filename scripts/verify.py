@@ -51,7 +51,7 @@ def main():
     expected = {'grail', 'sonic', 'doorman', 'viral', 'safehydra', 'chatsim', 'tbp-former'}
     actual = {p['id'] for p in data['papers'] if p['selected']}
     assert actual == expected, actual
-    assert len(page.papers) == len(data['papers']) == 17
+    assert len(page.papers) == len(data['papers']) == 18
     assert len(page.videos) == 10
     for paper in data['papers']:
         assert (ROOT / f'assets/teasers/{paper["id"]}-poster.jpg').is_file(), f'Missing research image: {paper["id"]}'
