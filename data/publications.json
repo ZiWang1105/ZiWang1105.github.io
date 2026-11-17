@@ -135,7 +135,7 @@
       "title": "GRAIL: Generating Humanoid Loco-Manipulation from World Models",
       "year": 2026,
       "venue": "CoRL 2026",
-      "distinction": "Best Paper Award Finalist",
+      "distinction": "Best Paper Award Finalist · 6 award finalists / 2,094 submissions",
       "selected": true,
       "new_to_existing_site": true,
       "authors": [
@@ -167,7 +167,9 @@
         "Zi Wang"
       ],
       "sources": [
-        "https://research.nvidia.com/labs/dair/grail/"
+        "https://research.nvidia.com/labs/dair/grail/",
+        "https://www.corl.org/program/awards",
+        "https://www.omron.com/sinicx/en/activity/news/two-omron-sinic-x-research-papers-accepted-at-corl-2026-a-top-tier-conference-in-robot-learning/"
       ],
       "links": {
         "project": "https://research.nvidia.com/labs/dair/grail/",
@@ -175,7 +177,7 @@
         "code": "https://github.com/NVlabs/GRAIL"
       },
       "summary": "Video world models generate humanoid training interactions grounded in known 3D scenes for visual sim-to-real learning.",
-      "notes": "NVIDIA's project page explicitly marks four equal-contribution (co-)lead authors and CoRL 2026 Best Paper Award Finalist, verified November 17, 2026. Earlier title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors. Use the current project title."
+      "notes": "NVIDIA's project page explicitly marks four equal-contribution (co-)lead authors and CoRL 2026 Best Paper Award Finalist, verified November 17, 2026. Earlier title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors. Use the current project title. The official CoRL awards page lists six award finalists, including GRAIL; it does not separate finalist counts by award category. OMRON SINIC X reports 2,094 conference submissions. The displayed count uses the combined award-finalist list; 6 / 2,094 is approximately 0.287%."
     },
     {
       "id": "had",
