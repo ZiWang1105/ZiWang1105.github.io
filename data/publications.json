@@ -135,7 +135,7 @@
       "title": "GRAIL: Generating Humanoid Loco-Manipulation from World Models",
       "year": 2026,
       "venue": "CoRL 2026",
-      "distinction": "Oral",
+      "distinction": "Best Paper Award Finalist",
       "selected": true,
       "new_to_existing_site": true,
       "authors": [
@@ -175,7 +175,7 @@
         "code": "https://github.com/NVlabs/GRAIL"
       },
       "summary": "Video world models generate humanoid training interactions grounded in known 3D scenes for visual sim-to-real learning.",
-      "notes": "NVIDIA's project page explicitly marks four Co-First Authors and CoRL 2026 Oral Presentation. Earlier title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors. Use the current project title."
+      "notes": "NVIDIA's project page explicitly marks four equal-contribution (co-)lead authors and CoRL 2026 Best Paper Award Finalist, verified November 17, 2026. Earlier title: GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors. Use the current project title."
     },
     {
       "id": "had",
